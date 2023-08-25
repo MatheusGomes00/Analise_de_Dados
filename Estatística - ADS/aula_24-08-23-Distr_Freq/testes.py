@@ -9,5 +9,8 @@ import math
 
 # for i in range(len(n_real)):
 #     print(type(n_real[i]))
-n = 75
-print(math.sqrt(n, 2))
+# n = 75
+# print(math.sqrt(n, 2))
+n = [1, 2, 3, 4, 5]
+for i in range(len(n)):
+    print(i)

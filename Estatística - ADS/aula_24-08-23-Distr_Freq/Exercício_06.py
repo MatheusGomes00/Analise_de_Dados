@@ -1,4 +1,6 @@
 import math
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 lista = "32 40 22 11 34 40 16 26 23 31 27 10 38 17 13 45 25 10 18 23 35 22 30 14 18 20 13 24 35 29 33 48 20 12 31 39 17 58 19 16 12 21 15 12 20 51 12 19 15 41 29 25 13 23 32 14 27 43 37 21 28 37 26 44 11 53 38 46 17 36 28 49 56 19 11"
 
@@ -32,10 +34,24 @@ def intervalo(amplitude, qtde_linhas):
                 continue
     return "erro"
 
+def cont_ocorrencias(lista, intervalo, cont):
+    while cont < max(lista):    
+        n_ocorrencia = 0
+        for i in range(len(lista)):
+            if lista[i] >= cont and lista[i] < cont + intervalo:
+                n_ocorrencia += 1
+        print("De ", int(cont), " até", int(cont + intervalo), " = ", n_ocorrencia, '\t ', int(round((n_ocorrencia/len(lista)) * 100)), "%" )
+        cont += intervalo
+
+
 at = amplitude(lista_tratada)
 k = qtde_linhas(len(lista_tratada))
-print(k)
-print(intervalo(at, k)) 
+intervalo = intervalo(at, k)
+cont00 = min(lista_tratada)
+print(f'n_linhas = ou {k[0]} ou {k[1]} ou {k[2]}')
+print(f'Intervalo = de {int(intervalo)} em {int(intervalo)}\n')
+cont_ocorrencias(lista_tratada, intervalo, cont00) 
+
 
 
 
