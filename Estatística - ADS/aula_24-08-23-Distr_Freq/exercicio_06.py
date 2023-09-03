@@ -10,6 +10,7 @@ lista_tratada = list(map(int, lista.split()))
 # for i in range(len(lista_tratada)):
 #     print(lista_tratada[i])
 
+
 def amplitude(lista):  # At
     xmax = max([x for x in lista])
     xmin = min([x for x in lista])
@@ -53,5 +54,9 @@ print(f'Intervalo = de {int(intervalo)} em {int(intervalo)}\n')
 cont_ocorrencias(lista_tratada, intervalo, cont00) 
 
 
-
-
+# if __name__ == "__main__":
+#     amplitude()
+#     qtde_linhas()
+#     intervalo()
+#     cont_ocorrencias()
+# # construir gráfico histograma de frequência
