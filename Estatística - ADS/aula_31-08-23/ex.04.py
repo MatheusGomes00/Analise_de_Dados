@@ -9,3 +9,4 @@ calc.calc_moda(lista)
 calc.calc_mediana(lista)
 calc.decil(lista, 7)
 calc.quintil(lista, 2)
+ 
