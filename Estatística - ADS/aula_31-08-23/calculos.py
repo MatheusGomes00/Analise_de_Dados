@@ -6,7 +6,7 @@ import sys
 
 
 def cond_lista(lista):
-    return list(sorted(map(int, lista.split())))
+    return sorted(list(map(int, lista.split())))
 
 
 def calc_moda(lista):
