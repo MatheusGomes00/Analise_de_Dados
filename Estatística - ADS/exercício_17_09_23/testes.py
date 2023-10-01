@@ -1,40 +1,19 @@
-# import calculos as calc
-
-
-# lista = " 2100 2500 4200 5000 5000 6400 10000 8400 17500 26500 26500 26500 26500"
-
-# lista_tratada = calc.cond_lista(lista)
-# qtde_linhas = calc.qtde_linhas(lista_tratada)
-
-def quintil(lista, n_quintil):
-    lista = cond_lista(lista)
-    if n_quintil == 1:
-        position = int(len(lista) * 0.2)
-        print(f"Quintil {n_quintil}: {lista[position]}")
-    elif n_quintil == 2:
-        position = int(len(lista) * 0.4)
-        print(f"Quintil {n_quintil}: {lista[position]}")
-    elif n_quintil == 3:
-        position = int(len(lista) * 0.6)
-        print(f"Quintil {n_quintil}: {lista[position]}")
-    elif n_quintil == 4:
-        position = int(len(lista) * 0.8)
-        print(f"Quintil {n_quintil}: {lista[position]}")
-    elif n_quintil == 5:
-        print(f"Quartil {n_quintil}: {lista[-1]}")
-    else:
-        print("Valor quartil inválido!")
-    return
+import math
 
 def cond_lista(lista):
-    return list(sorted(map(int, lista.split())))
+    return sorted(list(map(int, lista.split())))
 
 
-def percentil(lista, n_percent):
-    lista = cond_lista(lista)
-    position = int(len(lista) * n_percent) - 1
-    print(lista[position])
+def desvio_padrao(lista): # Desvio padrão de uma amostra  stats.stdev(lista_tratada) --> desvio padrão amostral dos dados
+    lista_tratada = cond_lista(lista)
+    media = sum(lista_tratada) / len(lista_tratada)
+    soma_quadrados = 0
+    for valor in lista_tratada:
+        diferenca = valor - media  # desvios
+        soma_quadrados += diferenca ** 2
+    desvio_padrao = math.sqrt(soma_quadrados / (len(lista_tratada) -1))
+    print(f"Desvio padrão: {desvio_padrao:.2f}")
 
-lista = " 240 240 240 240 255 255 255 280 240 240 240 240 280 290 390 300 255 255 255 280 300 300 300 300"
-quintil(lista, 4)
-percentil(lista, 30)
+
+lista = "3 4 5 6 7"
+desvio_padrao(lista)

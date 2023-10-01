@@ -66,15 +66,15 @@ def hit_count(lista, intervalo, cont):
 
 
 def verif_quartil(lista, n_quartil):
-    #lista = cond_lista(lista)
+    lista = cond_lista(lista)
     if n_quartil == 1:
-        position = int(len(lista) * 0.25)
+        position = int(len(lista) * 0.25) - 1
         print(f"Quartil {n_quartil}: {lista[position]}")
     elif n_quartil == 2:
-        position = int(len(lista) * 0.5)
+        position = int(len(lista) * 0.5) - 1
         print(f"Quartil {n_quartil}: {lista[position]}")
     elif n_quartil == 3:
-        position = int(len(lista) * 0.75)
+        position = int(len(lista) * 0.75) - 1
         print(f"Quartil {n_quartil}: {lista[position]}")
     elif n_quartil == 4:
         print(f"Quartil {n_quartil}: {lista[-1]}")
@@ -111,9 +111,9 @@ def decil(lista, n_decil):
 
 
 def percentil(lista, n_percent):
-    # lista = cond_lista(lista)
-    position = int(len(lista) * n_percent) - 1
-    return lista[position]
+    lista = cond_lista(lista)
+    position = int(len(lista) * (n_percent/100))
+    print(f"Percentil {n_percent} = {lista[position - 1]}")
 
 
 def calc_frequency(lista):
@@ -172,8 +172,8 @@ def curtose(lista):
 
 lista = " 240 240 240 240 255 255 255 280 240 240 240 240 280 290 390 300 255 255 255 280 300 300 300 300"
 
-lista = cond_lista(lista)
-print(percentil(lista, 30))
+#lista = cond_lista(lista)
+percentil(lista, 30)
 verif_quartil(lista, 4)
 
 
