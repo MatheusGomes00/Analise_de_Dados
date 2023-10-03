@@ -1,6 +1,0 @@
-MEDIDAS DE DISPERSÃO(DESVIO PADRÃO), ASSIMETRIA E CURTOSE.
-
-Mensurar a dimensão média do afastamento dos valores de um conjunto
-de dados em relação à determinada Medida de Tendência Central, bem
-como de que maneira estes dados estão alocados em torno desta Medida.
-

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: estatistica-ADS
+Version: 0.0.1
+Summary: Pacote estatística ADS
+Author: Matheus Gomes
+Keywords: python,first packege
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Módulos de estatística desenvolvidos no curso de Análise e Desenvolvimento de Sistemas 2022-2025

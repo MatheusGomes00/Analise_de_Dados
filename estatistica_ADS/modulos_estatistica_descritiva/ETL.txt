@@ -1,0 +1,9 @@
+Usando Binning Ideal para Discretizar Empréstimo Requerente Dados
+https://www.ibm.com/docs/pt-br/spss-statistics/saas?topic=binning-using-optimal-discretize-loan-applicant-data
+
+
+Conheça as Etapas do Pré-Processamento de dados
+https://www.datageeks.com.br/pre-processamento-de-dados/
+
+
+Distribuição de Frequências
