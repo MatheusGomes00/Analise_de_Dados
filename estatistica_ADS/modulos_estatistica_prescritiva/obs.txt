@@ -1,0 +1,28 @@
+Prababilidade de um evento futuro ocorrer;
+    Distribuição Binomial - 2 resultados possíveis;
+    Distribuição Normal - Média e Desvio Padrão;
+    Distribuição Uniforme - Intervalo min. |----| máx.;
+
+Distribuição Binomial - Modelo discreto de probabilidade que admite apenas 
+2 resultados: sucesso (P) e fracasso (Q);
+P + Q = 1 --> % (busca) porcentagem de busca;
+
+Prob(k) = (n, k) * P^k * Q^n-k
+k = evento
+n = tamanho da amosta
+(n, k) = análise combinatória de n e k; n!/(n!*(n-k))
+
+Exemplo fábrica de sapato:
+
+Situação       |Prod. Diaria    |%
+________________________________________
+c/ defeito     |100             |0,07%  (7%)    x ou y | p(% busca) ou q(resto)
+s/ defeito     |1400            |0,93%  (93%)   2 resultados possíveis
+                1500                    
+
+Qual é a probabilidade de um cliente comprar 10 peças e todas estarem sem defeito?
+n=10                Prob(10) = (10, 10) * 0,93^10 * 0,07^10-10
+k=10                Prob(10) = 0,4840 * 100
+p=0,93              Prob(10) = 48,40%
+q=0,07
+
