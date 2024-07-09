@@ -1,6 +1,0 @@
-setup.py
-estatistica_ADS/__init__.py
-estatistica_ADS.egg-info/PKG-INFO
-estatistica_ADS.egg-info/SOURCES.txt
-estatistica_ADS.egg-info/dependency_links.txt
-estatistica_ADS.egg-info/top_level.txt
